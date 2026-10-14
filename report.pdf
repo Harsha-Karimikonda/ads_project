@@ -1,0 +1,157 @@
+%PDF-1.4
+%\xe2\xe3\xcf\xd3
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Length 6060 >>
+stream
+0.92 0.94 0.98 rg 54 693 504 55 re f
+0.2 0.4 0.7 RG 2 w 54 693 m 558 693 l S
+BT /F2 16 Tf 0.1 0.2 0.45 rg 66 718 Td (COP 5536 Fall 2026: Job Scheduler Project Report) Tj ET
+BT /F1 10 Tf 0.3 0.35 0.45 rg 66 702 Td (Author: Student | Language: Python 3 | Architecture & Implementation Summary) Tj ET
+BT /F2 12 Tf 0.12 0.25 0.55 rg 54 664 Td (1. Program Organization & Modular Architecture) Tj ET
+0.8 0.85 0.92 RG 1 w 54 660 m 558 660 l S
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 650 Td (The project is structured in a strictly decoupled, modular architecture adhering to submission) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 637 Td (requirements. The primary data structures are isolated into separate standalone modules) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 624 Td (completely independent of scheduler logic and input parsing, allowing independent inspection) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 611 Td (and verification by automated grading harnesses.) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 594 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 594 Td (job.py: ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 113 594 Td (Defines the Job entity with unique identifier, priority, execution time) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 581 Td (estimates, delta offsets, timestamps, and lifecycle states \(WAITING, RUNNING, COMPLETED,) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 568 Td (CANCELLED\).) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 555 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 555 Td (avl_tree.py: ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 140 555 Td (Implements a complete self-balancing AVL Tree from scratch, keyed by job_id.) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 542 Td (Maintains node references to Job objects, tracks rotation counts, and provides tree-shape) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 529 Td (level-order output.) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 516 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 516 Td (max_heap.py: ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 140 516 Td (Implements an array-based Binary Max Heap from scratch for WAITING jobs.) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 503 Td (Includes position indexing for O\(log n\) removals/updates, dual scheduling modes, and) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 490 Td (bottom-up rebuilds.) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 477 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 477 Td (jobScheduler.py: ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 162 477 Td (The central discrete-event simulation driver. Coordinates capacity) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 464 Td (constraints \(k\), advances the simulation clock, manages running job completions, and) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 451 Td (dispatches commands.) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 438 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 438 Td (test_scheduler.py: ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 173 438 Td (Test harness verifying all cases from TestCases.docx and comprehensive) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 425 Td (rotation/edge-case tests.) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 412 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 412 Td (Makefile: ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 124 412 Td (Prepares execution permissions, compiles Python bytecode, and exposes clean and) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 399 Td (test targets.) Tj ET
+BT /F2 12 Tf 0.12 0.25 0.55 rg 54 372 Td (2. Classes and Data Structures Overview) Tj ET
+0.8 0.85 0.92 RG 1 w 54 368 m 558 368 l S
+BT /F2 10.5 Tf 0.15 0.15 0.2 rg 54 350 Td (2.1 Job Entity \(job.py\)) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 338 Td (Every submitted job is instantiated as exactly one Job object, which is then shared via direct) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 325 Td (reference across the AVL Tree, Binary Max Heap, Running Priority Queue, and Cancelled List.) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 312 Td (State transitions \(start, complete, cancel\) update the object in-place, eliminating redundant) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 299 Td (records across the system.) Tj ET
+BT /F2 10.5 Tf 0.15 0.15 0.2 rg 54 274 Td (2.2 AVL Tree \(avl_tree.py\)) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 262 Td (The AVL Tree serves as the primary dictionary for all active \(non-cancelled\) jobs, keyed by) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 249 Td (job_id. Each node records its subtree height. The balance factor is computed as BF =) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 236 Td (height\(left\) - height\(right\). Whenever |BF| > 1 after an insertion or deletion, the tree) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 223 Td (restores balance using primitive left and right rotations. Four rebalancing cases are handled:) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 210 Td (Left-Left \(single right rotation\), Right-Right \(single left rotation\), Left-Right \(left) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 197 Td (rotation on child followed by right rotation on parent\), and Right-Left \(right rotation on) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 184 Td (child followed by left rotation on parent\). Counters for primitive left and right rotations are) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 171 Td (explicitly tracked. Deletion replaces internal nodes with their inorder successor \(minimum node) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 158 Td (of the right subtree\).) Tj ET
+BT /F2 12 Tf 0.12 0.25 0.55 rg 54 131 Td (3. Data Structure Representations & Mechanics) Tj ET
+0.8 0.85 0.92 RG 1 w 54 127 m 558 127 l S
+BT /F2 10.5 Tf 0.15 0.15 0.2 rg 54 109 Td (3.1 Binary Max Heap & Priority Inversion Tracking \(max_heap.py\)) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 97 Td (The waiting queue is implemented as a Binary Max Heap using a 0-indexed flat list. For any) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 84 Td (element at index i, its parent is located at floor\(\(i - 1\) / 2\) and its children at 2i + 1 and) Tj ET
+BT /F1 8 Tf 0.5 0.5 0.5 rg 508 30 Td (Page 1 of 2) Tj ET
+BT /F1 8 Tf 0.5 0.5 0.5 rg 54 30 Td (COP 5536 Fall 2026 - Advanced Data Structures Project Report) Tj ET
+0.8 0.8 0.8 RG 0.5 w 54 42 m 558 42 l S
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 4231 >>
+stream
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 738 Td (2i + 2. Crucially, the Max Heap maintains an internal hash map \(pos: job_id -> index\) that is) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 725 Td (updated on every element swap. This enables O\(log n\) arbitrary job cancellations \(remove\) and) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 712 Td (priority updates \(update_priority\) without resorting to O\(n\) linear scans. The heap supports) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 699 Td (two scheduling rankings:) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 682 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 682 Td (PRIORITY Mode: ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 151 682 Td (Higher priority > earlier submission time > smaller job_id.) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 669 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 669 Td (SHORT_JOBS Mode: ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 162 669 Td (Smaller estimated_time > higher priority > earlier submission time >) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 656 Td (smaller job_id.) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 643 Td (When the SHORT_JOBS command is encountered, the heap switches mode permanently and executes a) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 630 Td (linear-time bottom-up heapify \(rebuild\) starting from floor\(n/2\) - 1 down to 0, incrementing) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 617 Td (the rebuilds statistic.) Tj ET
+BT /F2 10.5 Tf 0.15 0.15 0.2 rg 54 596 Td (3.2 Running Jobs & Discrete Event Simulation) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 584 Td (Concurrency is strictly constrained to at most k RUNNING jobs. Running jobs are tracked in a) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 571 Td (Min-Heap priority queue ordered by completion time. Before processing any command at timestamp) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 558 Td (t, the simulation clock advances and all running jobs with completion time <= clock are marked) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 545 Td (COMPLETED, freeing capacity slots. When PROCESS_NEXT is invoked at capacity, the clock) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 532 Td (fast-forwards to the earliest completion time among running jobs, completes those jobs) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 519 Td (simultaneously, and immediately launches the next highest-ranking waiting job.) Tj ET
+BT /F2 12 Tf 0.12 0.25 0.55 rg 54 492 Td (4. External and Standard Libraries Used) Tj ET
+0.8 0.85 0.92 RG 1 w 54 488 m 558 488 l S
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 478 Td (In accordance with project guidelines, the program relies strictly on default Python 3) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 465 Td (standard library modules, guaranteeing 100% portable out-of-the-box execution on any standard) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 452 Td (Ubuntu LTS installation:) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 435 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 435 Td (heapq \(standard library\): ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 212 435 Td (Used exclusively to maintain the Min-Heap priority queue) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 422 Td (tracking the completion times of RUNNING jobs, as explicitly permitted by the project) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 409 Td (specification.) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 396 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 396 Td (list \(standard library\): ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 206 396 Td (Used for the Cancelled Jobs List to preserve FIFO cancellation) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 383 Td (order.) Tj ET
+BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 370 Td (-) Tj ET
+BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 370 Td (sys, os \(standard library\): ) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 223 370 Td (Used for command-line arguments and input/output file path) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 357 Td (management.) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 344 Td (No third-party packages \(such as NumPy, PyPI packages, or external binary dependencies\) are) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 331 Td (used.) Tj ET
+BT /F1 8 Tf 0.5 0.5 0.5 rg 508 30 Td (Page 2 of 2) Tj ET
+BT /F1 8 Tf 0.5 0.5 0.5 rg 54 30 Td (COP 5536 Fall 2026 - Advanced Data Structures Project Report) Tj ET
+0.8 0.8 0.8 RG 0.5 w 54 42 m 558 42 l S
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000027 00000 n 
+0000000076 00000 n 
+0000000139 00000 n 
+0000000209 00000 n 
+0000000284 00000 n 
+0000000352 00000 n 
+0000006464 00000 n 
+0000006610 00000 n 
+0000010893 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+11039
+%%EOF

@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.DS_Store
+jobScheduler
+submission.zip
+*_output_file.txt
+test*.txt
