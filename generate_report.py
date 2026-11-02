@@ -212,7 +212,7 @@ def build_report():
     pdf.add_bullet("avl_tree.py: ", "Implements a complete self-balancing AVL Tree from scratch, keyed by job_id. Maintains node references to Job objects, tracks rotation counts, and provides tree-shape level-order output.")
     pdf.add_bullet("max_heap.py: ", "Implements an array-based Binary Max Heap from scratch for WAITING jobs. Includes position indexing for O(log n) removals/updates, dual scheduling modes, and bottom-up rebuilds.")
     pdf.add_bullet("jobScheduler.py: ", "The central discrete-event simulation driver. Coordinates capacity constraints (k), advances the simulation clock, manages running job completions, and dispatches commands.")
-    pdf.add_bullet("test_scheduler.py: ", "Test harness verifying all cases from TestCases.docx and comprehensive rotation/edge-case tests.")
+    pdf.add_bullet("test_scheduler.py: ", "Test harness verifying all cases from TestCases_v2.docx and comprehensive rotation/edge-case tests.")
     pdf.add_bullet("Makefile: ", "Prepares execution permissions, compiles Python bytecode, and exposes clean and test targets.")
 
     # 2. Classes and Modules
@@ -233,7 +233,7 @@ def build_report():
         "Four rebalancing cases are handled: Left-Left (single right rotation), Right-Right (single left rotation), "
         "Left-Right (left rotation on child followed by right rotation on parent), and Right-Left (right rotation on child "
         "followed by left rotation on parent). Counters for primitive left and right rotations are explicitly tracked. "
-        "Deletion replaces internal nodes with their inorder successor (minimum node of the right subtree)."
+        "Deletion replaces internal nodes with their inorder predecessor (maximum node of the left subtree)."
     )
 
     # 3. Data Structure Representations (Page break as needed)

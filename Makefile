@@ -22,7 +22,7 @@ report:
 
 pack: all report
 	@rm -f submission.zip
-	@zip -j submission.zip job.py avl_tree.py max_heap.py jobScheduler.py Makefile report.pdf
+	@zip -j submission.zip job.py avl_tree.py max_heap.py jobScheduler.py test_scheduler.py generate_report.py Makefile report.pdf
 	@echo "Created submission.zip ready for submission."
 
 clean:

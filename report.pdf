@@ -16,7 +16,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 6 0 obj
-<< /Length 6060 >>
+<< /Length 6064 >>
 stream
 0.92 0.94 0.98 rg 54 693 504 55 re f
 0.2 0.4 0.7 RG 2 w 54 693 m 558 693 l S
@@ -50,8 +50,8 @@ BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 464 Td (constraints \(k\), advances the simulati
 BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 451 Td (dispatches commands.) Tj ET
 BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 438 Td (-) Tj ET
 BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 438 Td (test_scheduler.py: ) Tj ET
-BT /F1 9.5 Tf 0.2 0.2 0.2 rg 173 438 Td (Test harness verifying all cases from TestCases.docx and comprehensive) Tj ET
-BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 425 Td (rotation/edge-case tests.) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 173 438 Td (Test harness verifying all cases from TestCases_v2.docx and) Tj ET
+BT /F1 9.5 Tf 0.2 0.2 0.2 rg 66 425 Td (comprehensive rotation/edge-case tests.) Tj ET
 BT /F2 9.5 Tf 0.2 0.4 0.7 rg 56 412 Td (-) Tj ET
 BT /F2 9.5 Tf 0.15 0.15 0.2 rg 66 412 Td (Makefile: ) Tj ET
 BT /F1 9.5 Tf 0.2 0.2 0.2 rg 124 412 Td (Prepares execution permissions, compiles Python bytecode, and exposes clean and) Tj ET
@@ -71,8 +71,8 @@ BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 223 Td (restores balance using primitive left
 BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 210 Td (Left-Left \(single right rotation\), Right-Right \(single left rotation\), Left-Right \(left) Tj ET
 BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 197 Td (rotation on child followed by right rotation on parent\), and Right-Left \(right rotation on) Tj ET
 BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 184 Td (child followed by left rotation on parent\). Counters for primitive left and right rotations are) Tj ET
-BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 171 Td (explicitly tracked. Deletion replaces internal nodes with their inorder successor \(minimum node) Tj ET
-BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 158 Td (of the right subtree\).) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 171 Td (explicitly tracked. Deletion replaces internal nodes with their inorder predecessor \(maximum) Tj ET
+BT /F1 9.5 Tf 0.15 0.15 0.15 rg 54 158 Td (node of the left subtree\).) Tj ET
 BT /F2 12 Tf 0.12 0.25 0.55 rg 54 131 Td (3. Data Structure Representations & Mechanics) Tj ET
 0.8 0.85 0.92 RG 1 w 54 127 m 558 127 l S
 BT /F2 10.5 Tf 0.15 0.15 0.2 rg 54 109 Td (3.1 Binary Max Heap & Priority Inversion Tracking \(max_heap.py\)) Tj ET
@@ -147,11 +147,11 @@ xref
 0000000209 00000 n 
 0000000284 00000 n 
 0000000352 00000 n 
-0000006464 00000 n 
-0000006610 00000 n 
-0000010893 00000 n 
+0000006468 00000 n 
+0000006614 00000 n 
+0000010897 00000 n 
 trailer
 << /Size 10 /Root 1 0 R >>
 startxref
-11039
+11043
 %%EOF

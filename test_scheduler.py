@@ -1,6 +1,6 @@
 """
 COP 5536 Fall 2026 - Comprehensive Test Suite
-Validates jobScheduler against TestCases.docx and additional edge cases.
+Validates jobScheduler against TestCases_v2.docx and additional edge cases.
 """
 
 import os
@@ -277,9 +277,9 @@ EXECUTION_ORDER
 106 80 150
 END_EXECUTION_ORDER
 TREE
-LEVEL 0: [105]
-LEVEL 1: [102]|[106]
-LEVEL 2: [101]|[103]
+LEVEL 0: [103]
+LEVEL 1: [102]|[105]
+LEVEL 2: [101]|NULL|NULL|[106]
 END_TREE
 INORDER: [101, 102, 103, 105, 106]
 MAX_HEAP: [(101,3,60)]

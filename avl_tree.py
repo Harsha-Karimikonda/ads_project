@@ -141,10 +141,10 @@ class AVLTree:
             return True
         return False
 
-    def _min_value_node(self, node: AVLNode) -> AVLNode:
+    def _max_value_node(self, node: AVLNode) -> AVLNode:
         curr = node
-        while curr.left:
-            curr = curr.left
+        while curr.right:
+            curr = curr.right
         return curr
 
     def _delete(self, node: Optional[AVLNode], key: int, deleted: List[bool]) -> Optional[AVLNode]:
@@ -163,11 +163,11 @@ class AVLTree:
             elif not node.right:
                 return node.left
             else:
-                # Node with two children: replace with inorder successor (min in right subtree)
-                temp = self._min_value_node(node.right)
+                # Use the inorder predecessor, matching the supplied v2 tree output.
+                temp = self._max_value_node(node.left)
                 node.key = temp.key
                 node.job = temp.job
-                node.right = self._delete(node.right, temp.key, [False])
+                node.left = self._delete(node.left, temp.key, [False])
 
         if not node:
             return None
